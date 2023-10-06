@@ -1,0 +1,10 @@
+chickenMenuCount=int(input())
+fishMenuCount=int(input())
+vegMenuCount=int(input())
+deliceryPrice=2.50
+chickenMenuPrice=10.35
+fishMenuPrice=12.40
+vegMenuPrice=8.15
+total=(chickenMenuPrice*chickenMenuCount)+(fishMenuPrice*fishMenuCount)+(vegMenuPrice*vegMenuCount)
+desertPrice=total*0.20
+print(total+desertPrice+deliceryPrice)
