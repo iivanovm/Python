@@ -1,0 +1,9 @@
+nailon=int(input())+2
+paintQ=int(input())
+paintQ+=paintQ*0.1;
+bag=0.40
+razreditel=int(input())
+workedHours=int(input())
+total=(nailon*1.5)+(paintQ*14.50)+(razreditel*5)+bag
+total+=(total*0.30)*workedHours
+print(total)

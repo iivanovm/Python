@@ -1,0 +1,16 @@
+fruitList={
+"banana":"fruit",
+"apple":"fruit",
+"kiwi":"fruit",
+"cherry":"fruit",
+"lemon":"fruit",
+"grapes":"fruit"
+}
+vegetableList={
+"tomato":"vegetable",
+"cucumber":"vegetable",
+"pepper":"vegetable",
+"carrot":"vegetable"
+}
+product=input().lower()
+print(fruitList.setdefault(product,vegetableList.setdefault(product,"unknown")))

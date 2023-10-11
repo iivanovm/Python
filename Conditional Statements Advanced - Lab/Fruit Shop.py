@@ -1,0 +1,46 @@
+weekDay={
+"monday":1,
+"tuesday":2,
+"wednesday":3,
+"thursday":4,
+"friday":5,
+"saturday":6,
+"sunday":7
+}
+workDayPriceList={
+"banana":2.5,
+"apple":1.2,
+"orange":0.85,
+"grapefruit":1.45,
+"kiwi":2.7,
+"pineapple":5.5,
+"grapes":3.85
+}
+weekendPriceList={
+"banana":2.7,
+"apple":1.25,
+"orange":0.9,
+"grapefruit":1.6,
+"kiwi":3,
+"pineapple":5.6,
+"grapes":4.2
+}
+total=0
+fruit=input().lower()
+dayOfWeek=input().lower()
+pr=float(input())
+if weekDay.setdefault(dayOfWeek,0)==0:
+    print("error")
+else:
+    if(weekDay[dayOfWeek]>=1 and weekDay[dayOfWeek]<=5):
+        if(workDayPriceList.setdefault(fruit,0)==0):
+            print("error")
+        else:
+            total=workDayPriceList[fruit]*pr
+            print(f"{total:.2f}")
+    elif(weekDay[dayOfWeek]==6 or weekDay[dayOfWeek]==7):
+        if(weekendPriceList.setdefault(fruit,0)==0):
+            print("error")
+        else:
+            total=weekendPriceList[fruit]*pr
+            print(f"{total:.2f}")

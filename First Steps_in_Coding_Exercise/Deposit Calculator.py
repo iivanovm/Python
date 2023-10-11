@@ -1,0 +1,5 @@
+depositSum=float(input())
+sr=int(input())
+ylp=float(input())
+total=depositSum+sr*((depositSum*(ylp/100))/12)
+print(total)
